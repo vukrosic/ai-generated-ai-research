@@ -4,6 +4,9 @@
 
 - There are a few mistakes in the paper, but AI makes AI research a lot faster by writing code.
 
+I made YouTube video exlpaining this: https://youtu.be/fEvMgCKSiO4
+Bilibili: https://www.bilibili.com/video/BV19itPzHEFy/
+
 ---
 
 Welcome to the ultimate **AI-generated AI research project** – a fully automated experiment suite, analysis pipeline, and research paper generator. Everything you see here, from the experiments to the LaTeX paper, was assembled by an AI agent with a single goal: to out-research humans, one experiment at a time.
