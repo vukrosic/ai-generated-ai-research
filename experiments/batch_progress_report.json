@@ -1,0 +1,30 @@
+{
+  "status_counts": {
+    "queued": 0,
+    "running": 0,
+    "completed": 2,
+    "failed": 0
+  },
+  "total_jobs": 2,
+  "timing": {
+    "average_duration": 1.8689044999999997,
+    "min_duration": 1.597516,
+    "max_duration": 2.140293
+  },
+  "jobs": {
+    "batch_experiment_linear_sgd_000": {
+      "status": "completed",
+      "config_file": "configs/experiment_linear_sgd.json",
+      "started_at": "2025-08-06T14:02:34.872487",
+      "completed_at": "2025-08-06T14:02:36.470003",
+      "error": null
+    },
+    "batch_experiment_shallow_adam_001": {
+      "status": "completed",
+      "config_file": "configs/experiment_shallow_adam.json",
+      "started_at": "2025-08-06T14:02:34.872618",
+      "completed_at": "2025-08-06T14:02:37.012911",
+      "error": null
+    }
+  }
+}

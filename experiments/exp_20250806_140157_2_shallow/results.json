@@ -1,0 +1,200 @@
+{
+  "config": {
+    "polynomial_degree": 2,
+    "noise_level": 0.1,
+    "train_val_split": 0.8,
+    "model_architecture": "shallow",
+    "hidden_dims": [
+      64,
+      32
+    ],
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 5,
+    "random_seed": 42,
+    "num_data_points": 1000,
+    "x_range": [
+      -5.0,
+      5.0
+    ],
+    "activation_function": "relu",
+    "early_stopping_patience": 10,
+    "save_checkpoints": true
+  },
+  "experiment_id": "exp_20250806_140157_2_shallow",
+  "timestamp": "2025-08-06T14:01:57.385889",
+  "duration_seconds": 0.0,
+  "training_results": {
+    "train_losses": [
+      0.6401827096939087,
+      0.26412069499492646,
+      0.17344502717256546,
+      0.10971951872110366,
+      0.06765230983495713
+    ],
+    "val_losses": [
+      0.3400157519749233,
+      0.21276376502854483,
+      0.1432466379233769,
+      0.09119387290307454,
+      0.05919225247842925
+    ],
+    "final_train_loss": 0.06765230983495713,
+    "final_val_loss": 0.05919225247842925,
+    "training_time": 0.06985926628112793,
+    "model_parameters": {
+      "total_parameters": 2241,
+      "trainable_parameters": 2241,
+      "input_dim": 1,
+      "model_type": "ShallowNetwork",
+      "parameter_details": {
+        "network.0.weight": {
+          "shape": [
+            64,
+            1
+          ],
+          "requires_grad": true,
+          "num_elements": 64
+        },
+        "network.0.bias": {
+          "shape": [
+            64
+          ],
+          "requires_grad": true,
+          "num_elements": 64
+        },
+        "network.2.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "requires_grad": true,
+          "num_elements": 2048
+        },
+        "network.2.bias": {
+          "shape": [
+            32
+          ],
+          "requires_grad": true,
+          "num_elements": 32
+        },
+        "network.4.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "requires_grad": true,
+          "num_elements": 32
+        },
+        "network.4.bias": {
+          "shape": [
+            1
+          ],
+          "requires_grad": true,
+          "num_elements": 1
+        }
+      }
+    },
+    "predictions": null,
+    "confidence_intervals": null,
+    "epoch_times": [
+      0.04291987419128418,
+      0.0060329437255859375,
+      0.0070400238037109375,
+      0.006890058517456055,
+      0.006772041320800781
+    ],
+    "best_epoch": "4",
+    "best_val_loss": 0.05919225247842925
+  },
+  "final_train_loss": 0.06765230983495713,
+  "final_val_loss": 0.05919225247842925,
+  "best_val_loss": 0.05919225247842925,
+  "training_time": 0.06985926628112793,
+  "convergence_epoch": "4",
+  "model_parameters": {
+    "total_parameters": 2241,
+    "trainable_parameters": 2241,
+    "input_dim": 1,
+    "model_type": "ShallowNetwork",
+    "parameter_details": {
+      "network.0.weight": {
+        "shape": [
+          64,
+          1
+        ],
+        "requires_grad": true,
+        "num_elements": 64
+      },
+      "network.0.bias": {
+        "shape": [
+          64
+        ],
+        "requires_grad": true,
+        "num_elements": 64
+      },
+      "network.2.weight": {
+        "shape": [
+          32,
+          64
+        ],
+        "requires_grad": true,
+        "num_elements": 2048
+      },
+      "network.2.bias": {
+        "shape": [
+          32
+        ],
+        "requires_grad": true,
+        "num_elements": 32
+      },
+      "network.4.weight": {
+        "shape": [
+          1,
+          32
+        ],
+        "requires_grad": true,
+        "num_elements": 32
+      },
+      "network.4.bias": {
+        "shape": [
+          1
+        ],
+        "requires_grad": true,
+        "num_elements": 1
+      }
+    }
+  },
+  "model_size": 2241,
+  "data_stats": {
+    "num_points": 1000,
+    "polynomial_degree": 2,
+    "coefficients": [
+      -1.254598811526375,
+      4.507143064099162,
+      2.3199394181140507
+    ],
+    "x_range": [
+      -5.0,
+      5.0
+    ],
+    "y_range": [
+      -54.4148371914807,
+      10.412965863515694
+    ],
+    "noise_level": 0.1,
+    "train_size": 800,
+    "val_size": 200
+  },
+  "image_paths": [
+    "images/exp_20250806_140157_2_shallow/curve_fit.png",
+    "images/exp_20250806_140157_2_shallow/curve_fit.pdf",
+    "images/exp_20250806_140157_2_shallow/loss_curves.png",
+    "images/exp_20250806_140157_2_shallow/loss_curves.pdf"
+  ],
+  "model_path": null,
+  "config_path": null,
+  "status": "running",
+  "error_message": null
+}

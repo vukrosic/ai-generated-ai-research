@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[margin=1in]{geometry}
+
+\title{Neural Network Architectures for Polynomial Curve Fitting: A Comparative Study}
+\author{Test Author}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper presents a comprehensive empirical study of neural network architectures and optimization techniques for polynomial curve fitting tasks. We systematically evaluate 3 different network architectures combined with 3 optimization algorithms across polynomial curves of varying degrees. Our experimental evaluation comprises 3 completed experiments, providing insights into the effectiveness of different model-optimizer combinations for curve fitting tasks.
+\end{abstract}
+
+\section{Introduction}
+
+Polynomial curve fitting represents a fundamental problem in machine learning and computational mathematics. This paper addresses the systematic comparison of neural network architectures and optimization techniques for polynomial curve fitting through comprehensive experimental evaluation.
+
+\section{Methodology}
+
+We evaluate three classes of neural network architectures: linear models, shallow networks, and deep networks. Each architecture is combined with different optimization algorithms including SGD, Adam, RMSprop, and AdaGrad.
+
+\section{Results and Analysis}
+
+Table~\ref{tab:performance} presents the performance of different model configurations.
+
+\begin{table}[h]
+\centering
+\caption{Model performance comparison}
+\label{tab:performance}
+\begin{tabular}{@{}lllrrr@{}}
+\toprule
+Architecture & Optimizer & Degree & Val Loss & Train Loss & Time (s) \\
+\midrule
+linear & sgd & 2 & 0.002000 & 0.001000 & 20.00 \\
+shallow & adam & 3 & 0.003000 & 0.001500 & 35.00 \\
+deep & rmsprop & 4 & 0.004000 & 0.002000 & 50.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+
+Our experimental evaluation reveals significant performance variations across different architecture-optimizer combinations. The results provide practical guidance for curve fitting applications.
+
+\section{Conclusion}
+
+This study provides comprehensive benchmarks for neural network curve fitting and demonstrates the importance of architecture and optimizer selection for optimal performance.
+
+\end{document}
